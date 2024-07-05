@@ -28,8 +28,6 @@ const postPlant = async (req, res) => {
 
 const getPlants = async (req, res) => {
 
-    for(let i=0; i<999999999; i++){}
-
     const allPlants = await Plant.find()
 
     res.json({
